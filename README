@@ -1,3 +1,5 @@
 This Greasemonkey/Tapermonkey script adds a download link next to each track on The Hype Machine (www.hypem.com)
 
-It's availabe on http://userscripts.org/scripts/show/23612
+This is my fork, which is available here: http://userscripts.org/scripts/show/112466
+
+Its not much different than @tonyskn except for some slight visual things, and less comments in the code :)
