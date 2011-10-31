@@ -32,7 +32,7 @@ function addLinks() {
 						if(element.innerHTML.indexOf("Download")==-1){																												
 							var ahref = document.createElement('a');
 							ahref.setAttribute('href', "/serve/play/"+trackId+"/"+trackKey);
-							ahref.setAttribute('style','color:red;position: absolute;right: 10px;top: 5px;');
+							ahref.setAttribute('style','color:#ed2024;position: absolute;right: 10px;top: 5px;');
 							ahref.setAttribute('title',trackArtist+" - "+trackSong);
 							ahref.setAttribute('class','gmlink');
 							ahref.appendChild(document.createTextNode("Download"));							
