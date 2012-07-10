@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           Hype Machine direct download links v3
 // @author         @blissofbeing
-// @version        0.1
+// @version        0.2.0
 // @description	   Add download links next to tracks on The Hype Machine.
 // @include        http://hypem.com/*
 // ==/UserScript==
@@ -32,7 +32,7 @@ function addLinks() {
 						if(element.innerHTML.indexOf("Download")==-1){																												
 							var ahref = document.createElement('a');
 							ahref.setAttribute('href', "/serve/play/"+trackId+"/"+trackKey);
-							ahref.setAttribute('style','color:#ed2024;position: absolute;right: 10px;top: 5px;');
+							ahref.setAttribute('style','color:red;position: absolute;right: 10px;top: -15px;');
 							ahref.setAttribute('title',trackArtist+" - "+trackSong);
 							ahref.setAttribute('class','gmlink');
 							ahref.appendChild(document.createTextNode("Download"));							
@@ -49,6 +49,6 @@ addLinks();
 
 // Display links after an Ajax update is complete
 unsafeWindow.jQuery(document).ajaxComplete(function() {
-	addLinks();
+  addLinks();
   jQuery(".section.same .tools").css('top','29px');
 });
