@@ -7,15 +7,6 @@
 // ==/UserScript==
 // Add "Download" link next to songs on the HypeMachine ( http://hypem.com )
 
-// ==UserScript==
-// @name           Hype Machine direct download links v3
-// @author         @blissofbeing
-// @version        0.2.1
-// @description    Add download links next to tracks on The Hype Machine.
-// @include        http://hypem.com/*
-// ==/UserScript==
-// Add "Download" link next to songs on the HypeMachine ( http://hypem.com )
-
 function main(){
 
 var TrackList;
