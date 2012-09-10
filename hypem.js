@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           Hype Machine direct download links v3
 // @author         @blissofbeing
-// @version        0.2.2
+// @version        0.2.3
 // @description    Add download links next to tracks on The Hype Machine.
 // @include        http://hypem.com/*
 // ==/UserScript==
@@ -14,7 +14,8 @@ var TrackElements;
 var SelectedTrack;
 
 function addLinks() {
-	TrackList = trackList[document.location.href];
+	//TrackList = trackList[document.location.href];
+	TrackList = displayList.tracks
 	if (TrackList === undefined || TrackList.length < 1) {
 		setTimeout(addLinks, 1000);
 	} else {
