@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           Hype Machine direct download links v3
 // @author         @blissofbeing
-// @version        0.2.5
+// @version        0.2.6
 // @description    Add download links next to tracks on The Hype Machine.
 // @include        http://hypem.com/*
 // @require        https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js
@@ -38,7 +38,8 @@ function addLinks() {
 	                    'title': trackArtist+" - "+trackSong,
 	                    'class': 'gmlink',
 	                    'text': 'Download',
-	                    'target': "_blank"
+	                    'target': "_blank",
+	                    'download': trackArtist+" - "+trackSong
 	                }).appendTo($element.parent());
 	            }
 	            index++;
